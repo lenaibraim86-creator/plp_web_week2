@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header { text-align: center; }
+h1 { color: #2e7d32; }
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#add-expense {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#expenses-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* --- TABLE STYLING --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2e7d32;
+  color: white;
+}
+
+/* --- ADVANCED CSS SELECTORS - You need at least 3, here are 5 --- */
+
+/* 1. Descendant selector */
+#expenses-section td {
+  font-size: 15px;
+}
+
+/* 2. Direct child selector */
+#add-expense > form > input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  box-sizing: border-box;
+}
+
+#add-expense > form > select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+}
+
+/* 3. Pseudo-class based on position - alternating rows */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* 4. Negation pseudo-class */
+input:not([type="submit"]) {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 5. Focus state */
+input:focus, select:focus {
+  border-color: #2e7d32;
+  outline: none;
+  background-color: #e8f5e9;
+}
+
+/* Hover on table rows */
+tbody tr:hover {
+  background-color: #c8e6c9;
+}
+
+/* Hover on button + cursor pointer */
+button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
+}
